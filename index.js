@@ -19,3 +19,13 @@ navLinks.forEach((link) => {
     });
   });
 });
+// navbar
+window.addEventListener("scroll", function () {
+  const nav = document.querySelector(".nav__container");
+  if (window.scrollY > 50) {
+    // If scrolled down 50px or more
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});

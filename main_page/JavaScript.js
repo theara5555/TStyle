@@ -4,15 +4,17 @@ tailwind.config = {
     extend: {},
   },
 };
+// navbar
 window.addEventListener("scroll", function () {
-  var navbar = document.getElementById("navbar");
+  const nav = document.querySelector(".nav__container");
   if (window.scrollY > 50) {
-    // If scroll is more than 50px
-    navbar.classList.add("navbar-scrolled");
+    // If scrolled down 50px or more
+    nav.classList.add("scrolled");
   } else {
-    navbar.classList.remove("navbar-scrolled");
+    nav.classList.remove("scrolled");
   }
 });
+
 tailwind.config = {
   darkMode: "class",
   theme: {
@@ -63,3 +65,19 @@ tailwind.config = {
     extend: {},
   },
 };
+// about us
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    screens: {
+      xs: "320px",
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
+    extend: {},
+  },
+};
+
+//
