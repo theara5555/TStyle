@@ -70,7 +70,7 @@ body {
   padding: 0.5rem;
   font-size: 0.8rem;
   text-align: center;
-  background-color: var(--text-dark);
+  background-color: var(--text-dar);
   color: var(--white);
 }
 
@@ -120,7 +120,7 @@ body {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   padding: 5px 10px;
@@ -162,7 +162,7 @@ body {
 }
 /* Scrolled navbar */
 .nav__container.scrolled {
-  background-color: #d7d7d7;
+  background-color: #000000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -352,13 +352,22 @@ header {
   color: #f59e0b; /* Change text color on hover */
 }
 
+.musthave__card:hover img {
+  scale: 1.1;
+}
+
 .musthave__grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
+  place-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .musthave__card {
+  transition: scale 0.3s;
   display: grid;
   gap: 0.5rem;
   color: var(--text-dark);
@@ -444,7 +453,9 @@ header {
 }
 
 .brand__image img {
-  max-width: 120px;
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
 }
 
 .brand__image:hover {

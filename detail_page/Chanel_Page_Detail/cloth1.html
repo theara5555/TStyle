@@ -14,146 +14,112 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="icon" href="image/Logo.png" />
+    <link rel="icon" href="../../image/Logo.png" />
+    <link rel="stylesheet" href="../stylesheet.css" />
     <title>Cloth1</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="nav__container">
+        <a href="../../index.html" class="nav__logo">
+          <img src="../../image/Logo.png" alt="logo" style="width: 150px" />
+        </a>
+        <ul class="nav__links">
+          <li class="link"><a href="../../index.html">HOME</a></li>
+          <li class="link">
+            <a href="../../main_page/Chanel_Page.html">Chanel</a>
+          </li>
+          <li class="link">
+            <a href="../../main_page/Gucci_Page.html">Gucci</a>
+          </li>
+          <li class="link">
+            <a href="../../main_page/Lacoste_Page.html">Lacoste</a>
+          </li>
+          <li class="link">
+            <a href="../../main_page/Versace_Page.html">Versace</a>
+          </li>
+          <li class="link">
+            <a href="../../main_page/Zara_Page.html">Zara</a>
+          </li>
+          <li class="link">
+            <a href="../../main_page/AboutUs_Page.html">About Us</a>
+          </li>
+          <li class="link">
+            <a href="../../main_page/ContactUs_Page.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section>
         <div>
-          <div class="container mx-auto px-4 py-8">
-            <div class="flex flex-wrap -mx-4">
+          <div class="container mx-auto px-4 py-8 mt-20 max-w-screen-xl">
+            <div class="grid grid-cols-12 gap-4">
               <!-- Product Images -->
-              <div class="w-full md:w-1/2 px-4 mb-8">
+              <div class="col-span-12 md:col-span-6 px-4 mb-8">
                 <img
-                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080"
+                  src="../../image/Chanel/cloth1.webp.png"
                   alt="Product"
                   class="w-full h-auto rounded-lg shadow-md mb-4"
                   id="mainImage"
                 />
                 <div class="flex gap-4 py-4 justify-center overflow-x-auto">
                   <img
-                    src="https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8aGVhZHBob25lfGVufDB8MHx8fDE3MjEzMDM2OTB8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                    src="../../image/Chanel/cloth1.1.webp"
                     alt="Thumbnail 1"
-                    class="size-16 sm:size-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
+                    class="w-16 sm:w-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
                     onclick="changeImage(this.src)"
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1484704849700-f032a568e944?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw0fHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080"
+                    src="../../image/Chanel/cloth1.2.webp"
                     alt="Thumbnail 2"
-                    class="size-16 sm:size-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
+                    class="w-16 sm:w-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
                     onclick="changeImage(this.src)"
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1496957961599-e35b69ef5d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080"
+                    src="../../image/Chanel/cloth1.webp"
                     alt="Thumbnail 3"
-                    class="size-16 sm:size-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
-                    onclick="changeImage(this.src)"
-                  />
-                  <img
-                    src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080"
-                    alt="Thumbnail 4"
-                    class="size-16 sm:size-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
+                    class="w-16 sm:w-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
                     onclick="changeImage(this.src)"
                   />
                 </div>
               </div>
 
               <!-- Product Details -->
-              <div class="w-full md:w-1/2 px-4">
-                <h2 class="text-3xl font-bold mb-2">
-                  Premium Wireless Headphones
-                </h2>
-                <p class="text-gray-600 mb-4">SKU: WH1000XM4</p>
+              <div class="col-span-12 md:col-span-6 px-4">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2">Wool vest</h2>
+                <p class="text-sm sm:text-base text-gray-600 mb-4">48 FR</p>
                 <div class="mb-4">
-                  <span class="text-2xl font-bold mr-2">$349.99</span>
-                  <span class="text-gray-500 line-through">$399.99</span>
+                  <span class="text-xl sm:text-2xl font-bold mr-2"
+                    >$4,435.29</span
+                  >
                 </div>
                 <div class="flex items-center mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="size-6 text-yellow-500"
+                  <!-- Rating SVGs -->
+                  <svg ... class="w-6 h-6 text-yellow-500"></svg>
+                  <!-- Add more SVGs as needed -->
+                  <span class="ml-2 text-gray-600 text-sm sm:text-base"
+                    >4.5 (120 reviews)</span
                   >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="size-6 text-yellow-500"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="size-6 text-yellow-500"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="size-6 text-yellow-500"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="size-6 text-yellow-500"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span class="ml-2 text-gray-600">4.5 (120 reviews)</span>
                 </div>
-                <p class="text-gray-700 mb-6">
+                <p class="text-gray-700 text-sm sm:text-base mb-6">
                   Experience premium sound quality and industry-leading noise
                   cancellation with these wireless headphones. Perfect for music
                   lovers and frequent travelers.
                 </p>
 
+                <!-- Color options and quantity -->
                 <div class="mb-6">
-                  <h3 class="text-lg font-semibold mb-2">Color:</h3>
+                  <h3 class="text-sm sm:text-lg font-semibold mb-2">Color:</h3>
                   <div class="flex space-x-2">
                     <button
-                      class="btn sale__btn w-8 h-8 bg-black rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                      class="w-8 h-8 bg-black rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                     ></button>
                     <button
                       class="w-8 h-8 bg-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                     ></button>
-                    <button
-                      class="w-8 h-8 bg-blue-500 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                    ></button>
                   </div>
                 </div>
-
                 <div class="mb-6">
                   <label
                     for="quantity"
@@ -170,76 +136,67 @@
                   />
                 </div>
 
+                <!-- Buttons -->
                 <div class="flex space-x-4 mb-6">
                   <button
                     class="bg-black flex gap-2 items-center text-white px-6 py-2 rounded-md hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
+                    <!-- Add to Cart Button -->
                     <svg
+                      class="w-6 h-6"
                       xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                      />
-                    </svg>
+                      ...
+                    ></svg>
                     Add to Cart
                   </button>
                   <button
                     class="bg-gray-200 flex gap-2 items-center text-gray-800 px-6 py-2 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
                   >
+                    <!-- Wishlist Button -->
                     <svg
+                      class="w-6 h-6"
                       xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
-                      />
-                    </svg>
+                      ...
+                    ></svg>
                     Wishlist
                   </button>
                 </div>
               </div>
             </div>
-            <div style="align-items: center" class="mt-8 w-[50%] items-center">
+
+            <!-- Description Section -->
+            <div class="mt-8 mx-auto w-full max-w-[1200px]">
               <div class="border-b border-gray-300">
-                <ul class="flex space-x-8">
+                <ul class="flex space-x-8 text-sm sm:text-base">
                   <li class="py-2 border-b-2 border-gray-800">Description</li>
                 </ul>
               </div>
               <div class="mt-4">
                 <p>
-                  Support AMA Animal Rescue by showing how much you love your
-                  pet with "I Love My Cat/Dog" charm bracelet. And remember,
-                  every purchase made off of the AMA SHOP goes directly to the
-                  medical expenses of our children.
+                  Our global team of authentication experts have unrivalled
+                  expertise and over 60,000 combined hours of training and
+                  experience. Plus, we work with the biggest names in fashion
+                  and study everything from stitch counts to serial codes so you
+                  can shop with confidence.
                 </p>
                 <ul class="list-disc list-inside mt-4">
                   <li>Products details</li>
-                  <li>Adjustable</li>
-                  <li>One size fits most</li>
-                  <li>8mm beads</li>
-                  <li>Semi-precious round smooth gemstone</li>
+                  <p>Online since: 2024-06-14</p>
+                  <p>Category: Clothing</p>
+                  <p>Sub-category: Jackets</p>
+                  <p>Designer: Chanel</p>
+                  <p>Material: Wool</p>
+                  <p>Location: France, from the seller Eric Gabriel</p>
                 </ul>
               </div>
             </div>
           </div>
+
           <!-- Discription -->
 
           <!-- reat -->
           <div
-            class="p-4 mx-auto bg-white rounded-lg shadow-md max-w-5xl sm:p-6 grid grid-cols-1 lg:grid-cols-6 gap-6"
+            class="container p-4 mx-auto bg-white rounded-lg shadow-md max-w-screen-xl sm:p-6 grid grid-cols-1 lg:grid-cols-6 gap-6"
           >
             <div class="lg:col-span-4 col-span-1">
               <form action="" method="POST" class="space-y-4">
@@ -403,15 +360,15 @@
             <!-- ✅ Grid Section - Starts Here 👇 -->
             <section
               id="Projects"
-              class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-5 mb-5"
+              class="container w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-5 mb-5"
             >
               <!--   ✅ Product card 1 - Starts Here 👇 -->
               <div
                 class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
               >
-                <a href="#">
+                <a href="cloth2.html">
                   <img
-                    src="../image/Chanel/cloth1.webp"
+                    src="../../image/Chanel/cloth2.webp"
                     alt="Product"
                     class="h-80 w-72 object-cover rounded-t-xl"
                   />
@@ -445,9 +402,9 @@
               <div
                 class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
               >
-                <a href="#">
+                <a href="cloth3.html">
                   <img
-                    src="../image/Chanel/cloth2.webp"
+                    src="../../image/Chanel/cloth3.webp"
                     alt="Product"
                     class="h-80 w-72 object-cover rounded-t-xl"
                   />
@@ -481,9 +438,9 @@
               <div
                 class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
               >
-                <a href="#">
+                <a href="cloth4.html">
                   <img
-                    src="../image/Chanel/cloth3.webp"
+                    src="../../image/Chanel/cloth4.webp"
                     alt="Product"
                     class="h-80 w-72 object-cover rounded-t-xl"
                   />
@@ -517,9 +474,9 @@
               <div
                 class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
               >
-                <a href="#">
+                <a href="clothDis.html">
                   <img
-                    src="../image/Chanel/cloth4.webp"
+                    src="../../image/Chanel/dress1.avif"
                     alt="Product"
                     class="h-80 w-72 object-cover rounded-t-xl"
                   />
@@ -553,9 +510,9 @@
               <div
                 class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
               >
-                <a href="#">
+                <a href="cloth6.html">
                   <img
-                    src="../image/Chanel/dress1.avif"
+                    src="../../image/Chanel/dress2.avif"
                     alt="Product"
                     class="h-80 w-72 object-cover rounded-t-xl"
                   />
@@ -589,9 +546,9 @@
               <div
                 class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
               >
-                <a href="#">
+                <a href="cloth7.html">
                   <img
-                    src="../image/Chanel/dress2.avif"
+                    src="../../image/Chanel/dress3.jpg"
                     alt="Product"
                     class="h-80 w-72 object-cover rounded-t-xl"
                   />
@@ -635,7 +592,7 @@
         <div class="lg:w-1/3">
           <a
             rel="noopener noreferrer"
-            href="../../index.css"
+            href="../../index.html"
             class="flex justify-center space-x-3 lg:justify-start"
           >
             <img src="../../image/Logo.png" alt="logo" class="w-[200px]" />
@@ -653,12 +610,16 @@
                 <a rel="noopener noreferrer" href="../../index.html">Home</a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="../../main_page/AboutUs_Page.html"
+                <a
+                  rel="noopener noreferrer"
+                  href="../../main_page/AboutUs_Page.html"
                   >About Us</a
                 >
               </li>
               <li>
-                <a rel="noopener noreferrer" href="../../main_page/ContactUs_Page.html"
+                <a
+                  rel="noopener noreferrer"
+                  href="../../main_page/ContactUs_Page.html"
                   >Contact Us</a
                 >
               </li>
@@ -670,23 +631,39 @@
             </h3>
             <ul class="space-y-1">
               <li>
-                <a rel="noopener noreferrer" href="../../main_page/Chanel_Page.html">Chanel</a>
+                <a
+                  rel="noopener noreferrer"
+                  href="../../main_page/Chanel_Page.html"
+                  >Chanel</a
+                >
               </li>
               <li>
-                <a rel="noopener noreferrer" href="../../main_page/Gucci_Page.html">Gucci</a>
+                <a
+                  rel="noopener noreferrer"
+                  href="../../main_page/Gucci_Page.html"
+                  >Gucci</a
+                >
               </li>
               <li>
-                <a rel="noopener noreferrer" href="../../main_page/Lacoste_Page.html"
+                <a
+                  rel="noopener noreferrer"
+                  href="../../main_page/Lacoste_Page.html"
                   >Lacoste</a
                 >
               </li>
               <li>
-                <a rel="noopener noreferrer" href="../../main_page/Versace_Page.html"
+                <a
+                  rel="noopener noreferrer"
+                  href="../../main_page/Versace_Page.html"
                   >Versace</a
                 >
               </li>
               <li>
-                <a rel="noopener noreferrer" href="../../main_page/Zara_Page.html">Zara</a>
+                <a
+                  rel="noopener noreferrer"
+                  href="../../main_page/Zara_Page.html"
+                  >Zara</a
+                >
               </li>
             </ul>
           </div>
@@ -694,12 +671,16 @@
             <h3 class="uppercase font-bold dark:text-gray-900">Contact</h3>
             <ul class="space-y-1">
               <li>
-                <a rel="noopener noreferrer" href="../../main_page/ContactUs_Page.html"
+                <a
+                  rel="noopener noreferrer"
+                  href="../../main_page/ContactUs_Page.html"
                   >Contact Us</a
                 >
               </li>
               <li>
-                <a rel="noopener noreferrer" href="../../main_page/AboutUs_Page.html"
+                <a
+                  rel="noopener noreferrer"
+                  href="../../main_page/AboutUs_Page.html"
                   >About Us</a
                 >
               </li>
