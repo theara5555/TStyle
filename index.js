@@ -7,21 +7,15 @@ navLinks.forEach((link) => {
   link.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent default link behavior
 
-    const filter = this.textContent.toLowerCase(); // Get the brand name from the clicked link
+    const filter = this.textContent.trim().toLowerCase(); // Get the brand name from the clicked link
 
-    // Loop through each card to show/hide based on the selected brand
     cards.forEach((card) => {
-      if (filter === "all") {
-        card.style.display = "block"; // Show all cards if "ALL" is clicked
+      if (filter === "all" || card.dataset.brand.toLowerCase() == filter) {
+        card.style.display = "block";
       } else {
-        // Show only the cards that match the selected brand
-        if (card.dataset.brand === filter) {
-          card.style.display = "block"; // Show matching brand cards
-        } else {
-          card.style.display = "none"; // Hide non-matching brand cards
-        }
+        card.style.display = "none";
       }
-    });c
+    });
   });
 });
 
